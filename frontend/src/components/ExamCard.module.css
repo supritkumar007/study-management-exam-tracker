@@ -1,0 +1,137 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.completed {
+    opacity: 0.8;
+    background: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badgeUpcoming {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.badgeCompleted {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: #e57373;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.deleteBtn:hover {
+    color: #d32f2f;
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.icon {
+    color: #888;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat small {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.stat strong {
+    color: var(--primary-color);
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.startBtn {
+    width: 100%;
+    background: var(--accent-color);
+    color: #004d40;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.startBtn:hover {
+    filter: brightness(0.95);
+}
+
+.startBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.completedText {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}

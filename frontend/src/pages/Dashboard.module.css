@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.alertsSection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.alertCard {
+    background: #e3f2fd; /* Light blue */
+    color: #0d47a1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 5px solid #2196f3;
+    font-size: 0.9rem;
+    animation: bounceIn 0.5s;
+}
+
+.urgent {
+    background: #ffebee; /* Light red */
+    color: #b71c1c;
+    border-left-color: #f44336;
+    font-weight: bold;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}
