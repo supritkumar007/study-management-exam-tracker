@@ -2,6 +2,9 @@
 
 A full-stack MERN application for students to manage exams, track study hours, and use a study timer.
 
+## Live Demo
+- https://studyhunter.vercel.app/
+
 ## Features
 - **Student Authentication** (Register/Login with JWT)
 - **Exam Management** (Add, Update, Auto-status update)
