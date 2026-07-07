@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const baseURL = import.meta.env.VITE_API_BASE_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : 'https://study-tracker-7t71.onrender.com/api');
+
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api',
+    baseURL,
     headers: {
         'Content-Type': 'application/json',
     },
