@@ -27,3 +27,9 @@ build/
 
 # Testing
 coverage/
+
+# Local portfolio details
+portfolio_details.txt
+
+# Lockfiles
+package-lock.json
