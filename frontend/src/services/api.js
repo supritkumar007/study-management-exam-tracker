@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : 'https://study-tracker-7t71.onrender.com/api');
+const envBaseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL = envBaseURL
+    ? `${envBaseURL.replace(/\/+$/, '')}/api`
+    : window.location.hostname === 'localhost'
+    ? 'http://localhost:5000/api'
+    : 'https://study-tracker-7t71.onrender.com/api';
 
 const api = axios.create({
     baseURL,
